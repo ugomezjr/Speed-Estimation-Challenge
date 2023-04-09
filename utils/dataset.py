@@ -33,7 +33,7 @@ class SpeedEstimations(Dataset):
 
     frames = torch.cat(frames, dim=0)
 
-    return frames, torch.tensor((1, estimate))
+    return frames, torch.tensor([estimate])
 
 
   def get_frame(self, i: int):
